@@ -168,8 +168,8 @@
 
         <section title='Processing Resource-Specific Information' anchor='resource_example'>
           <t>
-            When looking for information about the an individual resource, for example, the resource
-            identified by 'http://example.com/xy', the resource URI is applied to the
+            When looking for information about the an individual resource, for example, the
+            resource identified by 'http://example.com/xy', the resource URI is applied to the
             templates found, producing the following links:
           </t>
           <figure>
@@ -275,10 +275,9 @@
       <t>
         The client obtains the host-meta document for a given host by sending an HTTP
         <xref target='RFC2616' /> or an HTTPS <xref target='RFC2818' /> GET request to the host for
-        the <spanx style='verb'>/.well-known/host-meta</spanx> path. The client MUST only use the
-        default ports defined for each protocol (e.g. port 80 for HTTP and port 443 for HTTPS). The
-        scope and meaning of host-meta documents obtained via other protocols or ports is
-        undefined.
+        the <spanx style='verb'>/.well-known/host-meta</spanx> path, using the default ports
+        defined for each protocol (e.g. port 80 for HTTP and port 443 for HTTPS). The scope and
+        meaning of host-meta documents obtained via other protocols or ports is undefined.
       </t>
       <t>
         The server MUST support at least one protocol but MAY support both. If both protocols are

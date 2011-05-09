@@ -4,7 +4,7 @@
 Network Working Group                                    E. Hammer-Lahav
 Internet-Draft                                                    Yahoo!
 Intended status: Standards Track                                 B. Cook
-Expires: October 20, 2011                                 April 18, 2011
+Expires: November 10, 2011                                   May 9, 2011
 
 
                            Web Host Metadata
@@ -36,7 +36,7 @@ Status of this Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on October 20, 2011.
+   This Internet-Draft will expire on November 10, 2011.
 
 Copyright Notice
 
@@ -52,9 +52,9 @@ Copyright Notice
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 1]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 1]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
    include Simplified BSD License text as described in Section 4.e of
@@ -108,9 +108,9 @@ Table of Contents
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 2]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 2]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
 1.  Introduction
@@ -164,9 +164,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 3]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 3]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
    <?xml version='1.0' encoding='UTF-8'?>
@@ -220,9 +220,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 4]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 4]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
 1.1.1.  Processing Resource-Specific Information
@@ -276,9 +276,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 5]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 5]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
   <?xml version='1.0' encoding='UTF-8'?>
@@ -328,18 +328,18 @@ Internet-Draft                  host-meta                     April 2011
 
    The client obtains the host-meta document for a given host by sending
    an HTTP [RFC2616] or an HTTPS [RFC2818] GET request to the host for
-   the "/.well-known/host-meta" path.  The client MUST only use the
+   the "/.well-known/host-meta" path, using the default ports defined
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 6]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 6]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
-   default ports defined for each protocol (e.g. port 80 for HTTP and
-   port 443 for HTTPS).  The scope and meaning of host-meta documents
-   obtained via other protocols or ports is undefined.
+   for each protocol (e.g. port 80 for HTTP and port 443 for HTTPS).
+   The scope and meaning of host-meta documents obtained via other
+   protocols or ports is undefined.
 
    The server MUST support at least one protocol but MAY support both.
    If both protocols are supported, they MUST produce the same document.
@@ -388,9 +388,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 7]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 7]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
    The XRD 1.0 XML representation is the only canonical representation
@@ -444,9 +444,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 8]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 8]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
    For example, a blog with multiple authors can provide information
@@ -500,9 +500,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011                [Page 9]
+Hammer-Lahav & Cook     Expires November 10, 2011               [Page 9]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
 4.  Processing host-meta Documents
@@ -556,9 +556,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 10]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 10]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
             If the HTTP response status code is 301, 302, or 307, the
@@ -612,9 +612,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 11]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 11]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
    their templates as well as any protocol-specific variables or syntax
@@ -668,9 +668,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 12]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 12]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
    Reference:  [[ This specification ]]
@@ -724,9 +724,9 @@ Appendix A.  JRD Document Format
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 13]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 13]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
       inside the link object.
@@ -780,9 +780,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 14]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 14]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
    Is represented by the following JRD document:
@@ -836,9 +836,9 @@ Internet-Draft                  host-meta                     April 2011
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 15]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 15]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
 Appendix B.  Acknowledgments
@@ -892,9 +892,9 @@ Appendix B.  Acknowledgments
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 16]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 16]
 
-Internet-Draft                  host-meta                     April 2011
+Internet-Draft                  host-meta                       May 2011
 
 
 Authors' Addresses
@@ -948,5 +948,5 @@ Authors' Addresses
 
 
 
-Hammer-Lahav & Cook     Expires October 20, 2011               [Page 17]
+Hammer-Lahav & Cook     Expires November 10, 2011              [Page 17]
 

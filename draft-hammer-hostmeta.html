@@ -144,7 +144,7 @@
 <tr><td class="header">Network Working Group</td><td class="header">E. Hammer-Lahav</td></tr>
 <tr><td class="header">Internet-Draft</td><td class="header">Yahoo!</td></tr>
 <tr><td class="header">Intended status: Standards Track</td><td class="header">B. Cook</td></tr>
-<tr><td class="header">Expires: October 20, 2011</td><td class="header">April 18, 2011</td></tr>
+<tr><td class="header">Expires: November 10, 2011</td><td class="header">May 9, 2011</td></tr>
 </table></td></tr></table>
 <h1><br />Web Host Metadata<br />draft-hammer-hostmeta-14</h1>
 
@@ -178,7 +178,7 @@ and may be updated, replaced, or obsoleted by other documents at any time.
 It is inappropriate to use Internet-Drafts as reference material or to cite
 them other than as &ldquo;work in progress.&rdquo;</p>
 <p>
-This Internet-Draft will expire on October 20, 2011.</p>
+This Internet-Draft will expire on November 10, 2011.</p>
 
 <h3>Copyright Notice</h3>
 <p>
@@ -377,8 +377,8 @@ Example</h3>
 Processing Resource-Specific Information</h3>
 
 <p>
-            When looking for information about the an individual resource, for example, the resource
-            identified by 'http://example.com/xy', the resource URI is applied to the
+            When looking for information about the an individual resource, for example, the
+            resource identified by 'http://example.com/xy', the resource URI is applied to the
             templates found, producing the following links:
           
 </p><div style='display: table; width: 0; margin-left: 3em; margin-right: auto'><pre>
@@ -482,10 +482,9 @@ Obtaining host-meta Documents</h3>
 <p>
         The client obtains the host-meta document for a given host by sending an HTTP
         <a class='info' href='#RFC2616'>[RFC2616]<span> (</span><span class='info'>Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &ldquo;Hypertext Transfer Protocol -- HTTP/1.1,&rdquo; June&nbsp;1999.</span><span>)</span></a> or an HTTPS <a class='info' href='#RFC2818'>[RFC2818]<span> (</span><span class='info'>Rescorla, E., &ldquo;HTTP Over TLS,&rdquo; May&nbsp;2000.</span><span>)</span></a> GET request to the host for
-        the <tt>/.well-known/host-meta</tt> path. The client MUST only use the
-        default ports defined for each protocol (e.g. port 80 for HTTP and port 443 for HTTPS). The
-        scope and meaning of host-meta documents obtained via other protocols or ports is
-        undefined.
+        the <tt>/.well-known/host-meta</tt> path, using the default ports
+        defined for each protocol (e.g. port 80 for HTTP and port 443 for HTTPS). The scope and
+        meaning of host-meta documents obtained via other protocols or ports is undefined.
       
 </p>
 <p>
