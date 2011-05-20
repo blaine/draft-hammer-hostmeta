@@ -2,7 +2,7 @@
 <!DOCTYPE rfc SYSTEM 'rfc2629.dtd'>
 <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 
-<rfc category='std' ipr='trust200902' docName='draft-hammer-hostmeta-14'>
+<rfc category='std' ipr='trust200902' docName='draft-hammer-hostmeta-15'>
 
   <?rfc strict='yes' ?>
   <?rfc toc='yes' ?>
@@ -639,7 +639,7 @@
         exception of extensibility which is beyond the scope of this specification.
       </t>
       <t>
-        The client MAY requst a JRD representation using the HTTP
+        The client MAY request a JRD representation using the HTTP
         <spanx style='verb'>Accept</spanx> request header field with value of
         <spanx style='verb'>application/json</spanx>. The server MUST include the HTTP
         <spanx style='verb'>Content-Type</spanx> response header field with value of
@@ -647,6 +647,15 @@
         <spanx style='verb'>Content-Type</spanx> value (or lack of) indicates that the server does
         not support the JRD format.
       </t>
+
+      <t>
+        The client MAY also request a JRD representation by requesting the
+        <spanx style='verb'>host-meta</spanx> document with an extension of
+        <spanx style='verb'>json</spanx>, i.e., by making a GET request to
+        <spanx style='verb'>/.well-known/host-meta.json</spanx>.  Servers that
+        do not support JRD output MUST return a <spanx style='verb'>404 Not
+          Found</spanx> response to requests for <spanx
+          style='verb'>/.well-known/host-meta.json</spanx>.
       <t>
         XRD elements are serialized into a JSON structure as follows:
         
@@ -788,6 +797,12 @@
   }
 ]]>
         </artwork>
+        <postamble>
+          Note that the <spanx style='verb'>Subject</spanx> and <spanx
+            style='verb'>Alias</spanx> elements are NOT RECOMMENDED in the
+          context of host-meta documents, and as such are included in the
+          example for completeness only.
+        </postamble>
       </figure>
     </appendix>
 
