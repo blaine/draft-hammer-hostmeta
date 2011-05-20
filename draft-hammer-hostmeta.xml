@@ -342,7 +342,8 @@
       </t>
       <t>
         A JavaScript Object Notation (JSON) XRD 1.0 representation is described in
-        <xref target='json' />.
+        <xref target='json' />. It is RECOMMENDED that servers offer the JRD
+        representation in addition to the XRD representation.
       </t>
 
       <section title='XML Document format' anchor='format'>
